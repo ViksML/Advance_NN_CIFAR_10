@@ -13,7 +13,7 @@ This project implements a custom CNN architecture for CIFAR-10 image classificat
 The model follows a custom architecture with the following specifications:
 
 1. **Receptive Field**:  > 44
-2. **Parameters**: ~198k (requirement: <200k)
+2. **Parameters**: ~135k (requirement: <200k)
 3. **Special Layers**:
    - Depthwise Separable Convolution
    - Dilated Convolution
@@ -59,8 +59,8 @@ The model follows a custom architecture with the following specifications:
 | Linear-34 | [-1, 128] | 32,896 |
 | Linear-35 | [-1, 10] | 1,290 |
 
-**Total params**: 235,722  
-**Trainable params**: 235,722  
+**Total params**: 134,762 
+**Trainable params**: 134,762  
 **Non-trainable params**: 0  
 
 **Memory Usage**:
