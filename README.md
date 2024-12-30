@@ -5,7 +5,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Model Accuracy](https://img.shields.io/badge/Accuracy-85.11%25-green.svg)](https://github.com/yourusername/yourrepository)
-[![Parameters](https://img.shields.io/badge/Parameters-235.7K-blue.svg)](https://github.com/yourusername/yourrepository)
 
 This project implements a custom CNN architecture for CIFAR-10 image classification with specific architectural constraints and performance requirements.
 
@@ -20,7 +19,7 @@ The model follows a custom architecture with the following specifications:
    - Dilated Convolution
    - Global Average Pooling
 
-### Layer Details:
+### Layer Details
 ----------------------------------------------------------------
 Layer (type) Output Shape Param #
 ================================================================
