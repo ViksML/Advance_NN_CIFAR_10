@@ -19,55 +19,55 @@ The model follows a custom architecture with the following specifications:
    - Dilated Convolution
    - Global Average Pooling
 
-### Layer Details
+## Layer Details
 
-Layer (type)               Output Shape         Param #
-================================================================
-Conv2d-1                  [-1, 32, 32, 32]     864
-BatchNorm2d-2             [-1, 32, 32, 32]     64
-Dropout-3                 [-1, 32, 32, 32]     0
-Conv2d-4                  [-1, 32, 32, 32]     288
-BatchNorm2d-5             [-1, 32, 32, 32]     64
-Dropout-6                 [-1, 32, 32, 32]     0
-Conv2d-7                  [-1, 32, 32, 32]     1,024
-BatchNorm2d-8             [-1, 32, 32, 32]     64
-Conv2d-9                  [-1, 64, 32, 32]     576
-BatchNorm2d-10             [-1, 64, 32, 32]     128
-Dropout-11                [-1, 64, 32, 32]     0
-Conv2d-12                 [-1, 64, 32, 32]     576
-BatchNorm2d-13             [-1, 64, 32, 32]     128
-Dropout-14                [-1, 64, 32, 32]     0
-Conv2d-15                 [-1, 64, 32, 32]     4,096
-BatchNorm2d-16             [-1, 64, 32, 32]     128
-Conv2d-17                 [-1, 128, 32, 32]     2,304
-BatchNorm2d-18             [-1, 128, 32, 32]     256
-Dropout-19                [-1, 128, 32, 32]     0
-Conv2d-20                 [-1, 128, 32, 32]     4,608
-BatchNorm2d-21             [-1, 128, 32, 32]     256
-Dropout-22                [-1, 128, 32, 32]     0
-Conv2d-23                 [-1, 128, 32, 32]     16,384
-BatchNorm2d-24             [-1, 128, 32, 32]     256
-Conv2d-25                 [-1, 256, 32, 32]     36,864
-BatchNorm2d-26             [-1, 256, 32, 32]     512
-Dropout-27                [-1, 256, 32, 32]     0
-Conv2d-28                 [-1, 256, 32, 32]     65,536
-BatchNorm2d-29             [-1, 256, 32, 32]     512
-Dropout-30                [-1, 256, 32, 32]     0
-Conv2d-31                 [-1, 256, 32, 32]     65,536
-BatchNorm2d-32             [-1, 256, 32, 32]     512
-AdaptiveAvgPool2d-33       [-1, 256, 1, 1]     0
-Linear-34                 [-1, 128]             32,896
-Linear-35                 [-1, 10]              1,290
-================================================================
-Total params: 235,722
-Trainable params: 235,722
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.01
-Forward/backward pass size (MB): 8.39
-Params size (MB): 0.90
-Estimated Total Size (MB): 9.30
-----------------------------------------------------------------
+| Layer (type) | Output Shape | Param # |
+|--------------|--------------|---------|
+| Conv2d-1 | [-1, 32, 32, 32] | 864 |
+| BatchNorm2d-2 | [-1, 32, 32, 32] | 64 |
+| Dropout-3 | [-1, 32, 32, 32] | 0 |
+| Conv2d-4 | [-1, 32, 32, 32] | 288 |
+| BatchNorm2d-5 | [-1, 32, 32, 32] | 64 |
+| Dropout-6 | [-1, 32, 32, 32] | 0 |
+| Conv2d-7 | [-1, 32, 32, 32] | 1,024 |
+| BatchNorm2d-8 | [-1, 32, 32, 32] | 64 |
+| Conv2d-9 | [-1, 64, 32, 32] | 576 |
+| BatchNorm2d-10 | [-1, 64, 32, 32] | 128 |
+| Dropout-11 | [-1, 64, 32, 32] | 0 |
+| Conv2d-12 | [-1, 64, 32, 32] | 576 |
+| BatchNorm2d-13 | [-1, 64, 32, 32] | 128 |
+| Dropout-14 | [-1, 64, 32, 32] | 0 |
+| Conv2d-15 | [-1, 64, 32, 32] | 4,096 |
+| BatchNorm2d-16 | [-1, 64, 32, 32] | 128 |
+| Conv2d-17 | [-1, 128, 32, 32] | 2,304 |
+| BatchNorm2d-18 | [-1, 128, 32, 32] | 256 |
+| Dropout-19 | [-1, 128, 32, 32] | 0 |
+| Conv2d-20 | [-1, 128, 32, 32] | 4,608 |
+| BatchNorm2d-21 | [-1, 128, 32, 32] | 256 |
+| Dropout-22 | [-1, 128, 32, 32] | 0 |
+| Conv2d-23 | [-1, 128, 32, 32] | 16,384 |
+| BatchNorm2d-24 | [-1, 128, 32, 32] | 256 |
+| Conv2d-25 | [-1, 256, 32, 32] | 36,864 |
+| BatchNorm2d-26 | [-1, 256, 32, 32] | 512 |
+| Dropout-27 | [-1, 256, 32, 32] | 0 |
+| Conv2d-28 | [-1, 256, 32, 32] | 65,536 |
+| BatchNorm2d-29 | [-1, 256, 32, 32] | 512 |
+| Dropout-30 | [-1, 256, 32, 32] | 0 |
+| Conv2d-31 | [-1, 256, 32, 32] | 65,536 |
+| BatchNorm2d-32 | [-1, 256, 32, 32] | 512 |
+| AdaptiveAvgPool2d-33 | [-1, 256, 1, 1] | 0 |
+| Linear-34 | [-1, 128] | 32,896 |
+| Linear-35 | [-1, 10] | 1,290 |
+
+**Total params**: 235,722  
+**Trainable params**: 235,722  
+**Non-trainable params**: 0  
+
+**Memory Usage**:
+- Input size (MB): 0.01
+- Forward/backward pass size (MB): 8.39
+- Params size (MB): 0.90
+- Estimated Total Size (MB): 9.30
 
 #### Block 1 
 - Conv2d (3→32, k=3, d=1)
@@ -214,5 +214,3 @@ Estimated Total Size (MB): 9.30
 - Scheduler: ReduceLROnPlateau
 - Loss Function: CrossEntropyLoss
 - Dropout Rate: 0.1 
-
-## Model Summary
