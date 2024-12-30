@@ -20,44 +20,44 @@ The model follows a custom architecture with the following specifications:
    - Global Average Pooling
 
 ### Layer Details
-----------------------------------------------------------------
-Layer (type) Output Shape Param #
+
+Layer (type)               Output Shape         Param #
 ================================================================
-Conv2d-1 [-1, 32, 32, 32] 864
-BatchNorm2d-2 [-1, 32, 32, 32] 64
-Dropout-3 [-1, 32, 32, 32] 0
-Conv2d-4 [-1, 32, 32, 32] 288
-BatchNorm2d-5 [-1, 32, 32, 32] 64
-Dropout-6 [-1, 32, 32, 32] 0
-Conv2d-7 [-1, 32, 32, 32] 1,024
-BatchNorm2d-8 [-1, 32, 32, 32] 64
-Conv2d-9 [-1, 64, 32, 32] 576
-BatchNorm2d-10 [-1, 64, 32, 32] 128
-Dropout-11 [-1, 64, 32, 32] 0
-Conv2d-12 [-1, 64, 32, 32] 576
-BatchNorm2d-13 [-1, 64, 32, 32] 128
-Dropout-14 [-1, 64, 32, 32] 0
-Conv2d-15 [-1, 64, 32, 32] 4,096
-BatchNorm2d-16 [-1, 64, 32, 32] 128
-Conv2d-17 [-1, 128, 32, 32] 2,304
-BatchNorm2d-18 [-1, 128, 32, 32] 256
-Dropout-19 [-1, 128, 32, 32] 0
-Conv2d-20 [-1, 128, 32, 32] 4,608
-BatchNorm2d-21 [-1, 128, 32, 32] 256
-Dropout-22 [-1, 128, 32, 32] 0
-Conv2d-23 [-1, 128, 32, 32] 16,384
-BatchNorm2d-24 [-1, 128, 32, 32] 256
-Conv2d-25 [-1, 256, 32, 32] 36,864
-BatchNorm2d-26 [-1, 256, 32, 32] 512
-Dropout-27 [-1, 256, 32, 32] 0
-Conv2d-28 [-1, 256, 32, 32] 65,536
-BatchNorm2d-29 [-1, 256, 32, 32] 512
-Dropout-30 [-1, 256, 32, 32] 0
-Conv2d-31 [-1, 256, 32, 32] 65,536
-BatchNorm2d-32 [-1, 256, 32, 32] 512
-AdaptiveAvgPool2d-33 [-1, 256, 1, 1] 0
-Linear-34 [-1, 128] 32,896
-Linear-35 [-1, 10] 1,290
+Conv2d-1                  [-1, 32, 32, 32]     864
+BatchNorm2d-2             [-1, 32, 32, 32]     64
+Dropout-3                 [-1, 32, 32, 32]     0
+Conv2d-4                  [-1, 32, 32, 32]     288
+BatchNorm2d-5             [-1, 32, 32, 32]     64
+Dropout-6                 [-1, 32, 32, 32]     0
+Conv2d-7                  [-1, 32, 32, 32]     1,024
+BatchNorm2d-8             [-1, 32, 32, 32]     64
+Conv2d-9                  [-1, 64, 32, 32]     576
+BatchNorm2d-10             [-1, 64, 32, 32]     128
+Dropout-11                [-1, 64, 32, 32]     0
+Conv2d-12                 [-1, 64, 32, 32]     576
+BatchNorm2d-13             [-1, 64, 32, 32]     128
+Dropout-14                [-1, 64, 32, 32]     0
+Conv2d-15                 [-1, 64, 32, 32]     4,096
+BatchNorm2d-16             [-1, 64, 32, 32]     128
+Conv2d-17                 [-1, 128, 32, 32]     2,304
+BatchNorm2d-18             [-1, 128, 32, 32]     256
+Dropout-19                [-1, 128, 32, 32]     0
+Conv2d-20                 [-1, 128, 32, 32]     4,608
+BatchNorm2d-21             [-1, 128, 32, 32]     256
+Dropout-22                [-1, 128, 32, 32]     0
+Conv2d-23                 [-1, 128, 32, 32]     16,384
+BatchNorm2d-24             [-1, 128, 32, 32]     256
+Conv2d-25                 [-1, 256, 32, 32]     36,864
+BatchNorm2d-26             [-1, 256, 32, 32]     512
+Dropout-27                [-1, 256, 32, 32]     0
+Conv2d-28                 [-1, 256, 32, 32]     65,536
+BatchNorm2d-29             [-1, 256, 32, 32]     512
+Dropout-30                [-1, 256, 32, 32]     0
+Conv2d-31                 [-1, 256, 32, 32]     65,536
+BatchNorm2d-32             [-1, 256, 32, 32]     512
+AdaptiveAvgPool2d-33       [-1, 256, 1, 1]     0
+Linear-34                 [-1, 128]             32,896
+Linear-35                 [-1, 10]              1,290
 ================================================================
 Total params: 235,722
 Trainable params: 235,722
@@ -100,36 +100,86 @@ Estimated Total Size (MB): 9.30
 - Linear (128→10)
 
 ## Training Logs (Last 10 Epochs)
-poch: 54
-Training: Average loss: 0.0089, Accuracy: 42891/50000 (85.78%)
-Testing: Average loss: 0.0091, Accuracy: 8456/10000 (84.56%)
-Epoch: 55
-Training: Average loss: 0.0088, Accuracy: 42967/50000 (85.93%)
-Testing: Average loss: 0.0090, Accuracy: 8478/10000 (84.78%)
-Epoch: 56
-Training: Average loss: 0.0087, Accuracy: 43102/50000 (86.20%)
-Testing: Average loss: 0.0089, Accuracy: 8489/10000 (84.89%)
-Epoch: 57
-Training: Average loss: 0.0086, Accuracy: 43156/50000 (86.31%)
-Testing: Average loss: 0.0089, Accuracy: 8492/10000 (84.92%)
-Epoch: 58
-Training: Average loss: 0.0086, Accuracy: 43201/50000 (86.40%)
-Testing: Average loss: 0.0088, Accuracy: 8498/10000 (84.98%)
-Epoch: 59
-Training: Average loss: 0.0085, Accuracy: 43267/50000 (86.53%)
-Testing: Average loss: 0.0088, Accuracy: 8501/10000 (85.01%)
-Epoch: 60
-Training: Average loss: 0.0085, Accuracy: 43312/50000 (86.62%)
-Testing: Average loss: 0.0088, Accuracy: 8505/10000 (85.05%)
-Epoch: 61
-Training: Average loss: 0.0084, Accuracy: 43378/50000 (86.76%)
-Testing: Average loss: 0.0087, Accuracy: 8508/10000 (85.08%)
-Epoch: 62
-Training: Average loss: 0.0084, Accuracy: 43401/50000 (86.80%)
-Testing: Average loss: 0.0087, Accuracy: 8510/10000 (85.10%)
-Epoch: 63
-Training: Average loss: 0.0083, Accuracy: 43456/50000 (86.91%)
-Testing: Average loss: 0.0087, Accuracy: 8511/10000 (85.11%)
+
+### Epoch: 54
+- **Training**: 
+  - Average loss: 0.0089
+  - Accuracy: 42891/50000 (85.78%)
+- **Testing**: 
+  - Average loss: 0.0091
+  - Accuracy: 8456/10000 (84.56%)
+
+### Epoch: 55
+- **Training**: 
+  - Average loss: 0.0088
+  - Accuracy: 42967/50000 (85.93%)
+- **Testing**: 
+  - Average loss: 0.0090
+  - Accuracy: 8478/10000 (84.78%)
+
+### Epoch: 56
+- **Training**: 
+  - Average loss: 0.0087
+  - Accuracy: 43102/50000 (86.20%)
+- **Testing**: 
+  - Average loss: 0.0089
+  - Accuracy: 8489/10000 (84.89%)
+
+### Epoch: 57
+- **Training**: 
+  - Average loss: 0.0086
+  - Accuracy: 43156/50000 (86.31%)
+- **Testing**: 
+  - Average loss: 0.0089
+  - Accuracy: 8492/10000 (84.92%)
+
+### Epoch: 58
+- **Training**: 
+  - Average loss: 0.0086
+  - Accuracy: 43201/50000 (86.40%)
+- **Testing**: 
+  - Average loss: 0.0088
+  - Accuracy: 8498/10000 (84.98%)
+
+### Epoch: 59
+- **Training**: 
+  - Average loss: 0.0085
+  - Accuracy: 43267/50000 (86.53%)
+- **Testing**: 
+  - Average loss: 0.0088
+  - Accuracy: 8501/10000 (85.01%)
+
+### Epoch: 60
+- **Training**: 
+  - Average loss: 0.0085
+  - Accuracy: 43312/50000 (86.62%)
+- **Testing**: 
+  - Average loss: 0.0088
+  - Accuracy: 8505/10000 (85.05%)
+
+### Epoch: 61
+- **Training**: 
+  - Average loss: 0.0084
+  - Accuracy: 43378/50000 (86.76%)
+- **Testing**: 
+  - Average loss: 0.0087
+  - Accuracy: 8508/10000 (85.08%)
+
+### Epoch: 62
+- **Training**: 
+  - Average loss: 0.0084
+  - Accuracy: 43401/50000 (86.80%)
+- **Testing**: 
+  - Average loss: 0.0087
+  - Accuracy: 8510/10000 (85.10%)
+
+### Epoch: 63
+- **Training**: 
+  - Average loss: 0.0083
+  - Accuracy: 43456/50000 (86.91%)
+- **Testing**: 
+  - Average loss: 0.0087
+  - Accuracy: 8511/10000 (85.11%)
 
 ## Best Performance
 - **Highest Test Accuracy**: 85.11%
